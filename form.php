@@ -10,6 +10,8 @@
 </head>
     <body>
         <form id="phpForm" class="d-flex flex-column px-3 mt-5" action="index.php" method="get">
+            <label class="mb-3 mt-3" for="name">Nome utente</label>
+            <input class="p-2" type="text" name="name" placeholder="Inserisci Il tuo nome">
             <label class="mb-3 mt-3" for="word">Parola da censurare</label>
             <input class="p-2" type="text" name="word" placeholder="Inserisci la parola da censurare">
             <label class="mb-3 mt-3" for="text">Inserisci un testo</label>
