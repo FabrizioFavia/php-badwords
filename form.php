@@ -15,7 +15,7 @@
             <label class="mb-3 mt-3" for="word">Parola da censurare</label>
             <input class="p-2" type="text" name="word" placeholder="Inserisci la parola da censurare">
             <label class="mb-3 mt-3" for="text">Inserisci un testo</label>
-            <input class="p-2" type="text" name="text" placeholder="Inserisci il testo">
+            <textarea class="p-2" type="text" name="text" placeholder="Inserisci il testo"></textarea>
             <button class="mt-4 btn btn-primary w-25" type="submit">Inserisci</button>
         </form>
     </body>
