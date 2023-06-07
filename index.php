@@ -15,6 +15,7 @@
     $selectedWord = $_GET["word"];
     $text = $_GET["text"];
     $textLength =  strlen($text);
+    
 
 
     ?>
@@ -28,12 +29,17 @@
 
     <h3>Testo censurato</h3>
     <?php
-    if(str_contains($text, $selectedWord) == true){
-        $censored = str_replace($selectedWord,"***", $text);
+
+        $censored = str_ireplace($selectedWord,"***", $text, $count);
+
         echo $censored;
-    } else{
-        echo "La parola non è presente nel testo";
-    }
+
+        if ($count == 0) {
+            echo "La parola non è presente nel testo";
+        }else{
+            echo " <p>La parola è stata censurata $count volte </p>";
+        }
+ 
     ?>
     <h3>Lunghezza:</h3>
     <p><?php echo strlen($censored);?></p>
